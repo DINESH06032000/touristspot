@@ -6,7 +6,7 @@ import { GiStoneSphere } from "react-icons/gi";
 import { BsStack } from "react-icons/bs";
 import { FaCanadianMapleLeaf } from "react-icons/fa6";
 import { IoSettingsSharp } from "react-icons/io5";
-import { Link, Outlet } from 'react-router-dom';
+import { Link, NavLink, Outlet } from 'react-router-dom';
 // import './css/Navbar.css';
 import './css/Sidebar.css';
 
@@ -33,11 +33,21 @@ function NavbarWithSidebar() {
                     <div className="sidebar">
                         <div className="sidebar-menu">
                             <div className="top-icons">
-                                <div className='sidebar-icon'><Link to="/"><RiFolder6Fill /></Link></div>
-                                <div className='sidebar-icon'><Link to="/about"><HiMap /></Link></div>
-                                <div className='sidebar-icon'><Link to="/contact"><BsStack /></Link></div>
-                                <div className='sidebar-icon'><Link to="/contact"><GiStoneSphere /></Link></div>
-                                <div className='sidebar-icon'><Link to="/contact"><FaCanadianMapleLeaf /></Link></div>
+                                <div className='sidebar-icon'><NavLink to="/" className={({ isActive }) =>
+                                    isActive ? 'sidebar-link active' : 'sidebar-link'
+                                } ><RiFolder6Fill className='sidebar-i' /></NavLink></div>
+                                <div className='sidebar-icon'><NavLink to="/about" className={({ isActive }) =>
+                                    isActive ? 'sidebar-link active' : 'sidebar-link'
+                                }><HiMap className='sidebar-i' /></NavLink></div>
+                                <div className='sidebar-icon'><NavLink to="/contact" className={({ isActive }) =>
+                                    isActive ? 'sidebar-link active' : 'sidebar-link'
+                                }><BsStack className='sidebar-i' /></NavLink></div>
+                                <div className='sidebar-icon'><NavLink to="/contact" className={({ isActive }) =>
+                                    isActive ? 'sidebar-link active' : 'sidebar-link'
+                                }><GiStoneSphere className='sidebar-i' /></NavLink></div>
+                                <div className='sidebar-icon'><NavLink to="/contact" className={({ isActive }) =>
+                                    isActive ? 'sidebar-link active' : 'sidebar-link'
+                                }><FaCanadianMapleLeaf className='sidebar-i' /></NavLink></div>
                             </div>
                             <div className="bottom-icon">
                                 <div className='sidebar-icon'><Link to="/settings"><IoSettingsSharp /></Link></div>
@@ -49,12 +59,12 @@ function NavbarWithSidebar() {
                         </div>
 
                         <div className="sidebar-content">
-                        <Outlet />
+                            <Outlet />
                         </div>
                     </div>
                 </div>
             </div>
-            
+
         </>
     );
 }
