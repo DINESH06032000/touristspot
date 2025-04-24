@@ -50,13 +50,15 @@ function NavbarWithSidebar() {
                                 }><FaCanadianMapleLeaf className='sidebar-i' /></NavLink></div>
                             </div>
                             <div className="bottom-icon">
-                                <div className='sidebar-icon'><Link to="/settings"><IoSettingsSharp /></Link></div>
+                                <div className='sidebar-icon'><Link to="/settings" className={({ isActive }) =>
+                                    isActive ? 'sidebar-link active' : 'sidebar-link'
+                                }><IoSettingsSharp className='sidebar-i' /></Link></div>
                             </div>
                         </div>
 
                         <div className="sidebar-men">
                             <p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p>
-                        </div>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, reiciendis illo, est dignissimos minima vero nesciunt blanditiis veniam minus modi magnam aspernatur aperiam ratione fugit expedita obcaecati, et labore. Quos repellendus ab veritatis, nostrum quisquam error reiciendis est libero sequi quia, corrupti voluptas rerum tempore, tempora eaque totam illum voluptate accusantium culpa magnam minima alias accusamus fugiat odit? Quis molestiae, obcaecati dolores, tempore esse cumque eos quo, sequi sed voluptatibus deserunt explicabo iste id quas. At, minus ipsum nostrum dicta rem, impedit animi non, aspernatur harum tenetur repellat voluptas. Expedita possimus harum perspiciatis exercitationem nesciunt eius reiciendis distinctio maxime error!                        </div>
 
                         <div className="sidebar-content">
                             <Outlet />
