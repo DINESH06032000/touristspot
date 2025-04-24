@@ -26,3 +26,7 @@ body{
   --cal-poly-green: #394B31ff;
   --white: #FFFFFFff;
 }
+::selection{
+  background-color: var(--mindaro);
+  color: var(--eerie-black);
+}
