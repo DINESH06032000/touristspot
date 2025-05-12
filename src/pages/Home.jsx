@@ -1,12 +1,14 @@
-import React from 'react'
-import Globe from '../components/Globe'
+
+import A from "../components/A"
 import "./css/Home.css"
+
 
 
 function Home() {
   return (
     <>
-  <Globe/>
+ 
+  <div className='globe_home pt-2'> <A/></div>
     </>
   )
 }
