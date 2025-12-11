@@ -185,7 +185,7 @@ body {
   align-items: center;
 }
 .sidebar-top{
-  background-image: url("C:\Users\DINESH\Desktop\touristspot\public\images\indiamap.png");
+  background-image: url("../../../public/images/indiamap.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% ;
