@@ -2,7 +2,7 @@
 
 * {
     margin: 0px;
-    padding: 0px;
+    padding: 0px ;
     box-sizing: border-box;
     font-family: "Underdog", system-ui;
     font-weight:400;
@@ -26,9 +26,9 @@ body{
   --mindaro-light: rgba(214, 253, 106, 0.192);
   --cal-poly-green: #394B31ff;
   --white: #FFFFFFff;
+  --black:black;
 }
 ::selection{
   background-color: var(--mindaro);
   color: var(--eerie-black);
 }
-

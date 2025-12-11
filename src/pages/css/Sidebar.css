@@ -1,7 +1,7 @@
 html,
 body {
-  margin: 0;
-  padding: 0;
+  margin: 0 !important;
+  padding: 0 !important;
   height: 100%;
   overflow-x: hidden;
   box-sizing: border-box;
@@ -55,6 +55,7 @@ body {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  font-size: xx-large;
 }
 
 .nav-menu {
@@ -119,7 +120,7 @@ body {
 }
 
 .sidebar-icon a {
-  color: white;
+  color: var(--white);
   text-decoration: none;
   font-size: 22px;
   display: flex;
@@ -166,6 +167,8 @@ body {
 .sidebar-men {
   scrollbar-width: thin;
   scrollbar-color: var(--cal-poly-green) transparent;
+  border-right: 1px solid var(--cal-poly-green);
+  padding: 10px;
 }
 
 .sidebar-content {
@@ -176,10 +179,60 @@ body {
   overflow-y: auto;
   padding-right: 10px; /* optional: gives space for scrollbar */
 }
+.sidebar-topics{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sidebar-top{
+  background-image: url("C:\Users\DINESH\Desktop\touristspot\public\images\indiamap.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% ;
+  height: 50%;
+  width: 100%;
+  box-shadow: inset 0px 0px 20px 15px var(--eerie-black), inset 0px 0px 35px 35px var(--eerie-black),inset 0px 0px 50px  var(--eerie-black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
 
+.sidebar-top div:nth-child(1){
+  width: fit-content;
+  background-color: var(--white) ;
+  color: var(--black);
+  padding: 0 5px;
+  position: absolute;
+  top: 91px;
+  left: 50px;
+}
+.sidebar-top div:nth-child(2){
+  width: fit-content;
+  background-color: var(--mindaro) ;
+  color: var(--black);
+  padding: 0 5px;
+  position: absolute;
+  top: 72px;
+  left: 128px;
+}
+.sidebar-top div:nth-child(3){
+  height: 50px;
+  width: 1.6px;
+  background-color: var(--white);
+  position: absolute;
+  left: 39%;
+  top: 110px;
+}
 
-
-
+.sidebar-mid{
+  height: 30%;
+  width: 100%;
+  border-top: 1px solid var(--cal-poly-green);
+}
+.sidebar-mid div{
+  margin-top: 10px;
+}
 
 @media (max-width: 768px) {
   .sidebar-men {

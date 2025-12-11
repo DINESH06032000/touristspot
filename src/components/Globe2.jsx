@@ -67,7 +67,7 @@ const GeoIndiaLayer = ({ geoJson }) => {
         // Draw fill for India only (no wireframe)
         const drawFill = (ring, key) => {
           // Convert the ring of [lon, lat] into 3D coordinates
-          const vertices = ring.map(([lon, lat]) => convertCoordsToVector3(lon, lat, 1.53));
+          const vertices = ring.map(([lon, lat]) => convertCoordsToVector3(lon, lat,1.53));
         
           // Create geometry manually using triangle fan method
           const center = new THREE.Vector3();
@@ -151,7 +151,7 @@ const Globe2 = () => {
         {/* Globe sphere */}
         <mesh>
           <sphereGeometry args={[1.5, 64, 64]} />
-          <meshStandardMaterial color="black" wireframe />
+          <meshStandardMaterial color="black"  />
         </mesh>
 
         {/* GeoJSON outlines and fill */}

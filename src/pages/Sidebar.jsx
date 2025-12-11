@@ -8,7 +8,9 @@ import { FaCanadianMapleLeaf } from "react-icons/fa6";
 import { IoSettingsSharp } from "react-icons/io5";
 import { Link, NavLink, Outlet } from 'react-router-dom';
 // import './css/Navbar.css';
+import { FaCompass } from "react-icons/fa";
 import './css/Sidebar.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function NavbarWithSidebar() {
     return (
@@ -19,7 +21,7 @@ function NavbarWithSidebar() {
                         <div className="logo">
                             <span className='nav-menu'>C</span>
                             <img className='logo-img' src="logo.jpg" alt="Logo" />
-                            <span className='logo-name h4'>Tourist</span>
+                            <span className='logo-name'>Tourist</span>
                         </div>
                         <div className="menu" id="menu">
                             <span className='nav-user'>User Name</span>
@@ -57,9 +59,49 @@ function NavbarWithSidebar() {
                         </div>
 
                         <div className="sidebar-men">
-                            <p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p><p>lorem</p>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, reiciendis illo, est dignissimos minima vero nesciunt blanditiis veniam minus modi magnam aspernatur aperiam ratione fugit expedita obcaecati, et labore. Quos repellendus ab veritatis, nostrum quisquam error reiciendis est libero sequi quia, corrupti voluptas rerum tempore, tempora eaque totam illum voluptate accusantium culpa magnam minima alias accusamus fugiat odit? Quis molestiae, obcaecati dolores, tempore esse cumque eos quo, sequi sed voluptatibus deserunt explicabo iste id quas. At, minus ipsum nostrum dicta rem, impedit animi non, aspernatur harum tenetur repellat voluptas. Expedita possimus harum perspiciatis exercitationem nesciunt eius reiciendis distinctio maxime error!                        </div>
-
+                            <div className="sidebar-topics">
+                                <div>
+                                    <p>GENERAL</p>
+                                    <p>OVERVIEW</p>
+                                </div>
+                                <div><FaCompass /></div>
+                            </div>
+                            <div className='sidebar-top'>
+                                <div>21&deg;N 78&deg;E</div>
+                                <div>INDIA</div>
+                                <div></div>
+                            </div>
+                            <div className='sidebar-mid'>
+                                <div >
+                                    <p>TRENDING</p>
+                                    <p>DESTINATIONS</p>
+                                </div>
+                                <div className="row">
+                                    <div className="col-6">
+                                        <div className="row">
+                                            <div className="col-4">
+                                                <img src="images/delhi.png" alt="" style={{width:"100%"}}/>
+                                            </div>
+                                            <div className="col-8">
+                                                <p>Name</p>
+                                                <p>Location</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-6">
+                                        <div className="row">
+                                            <div className="col-4">
+                                                <img src="images/delhi.png" alt="" style={{width:"100%"}}/>
+                                            </div>
+                                            <div className="col-8">
+                                                <p>Name</p>
+                                                <p>Location</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div className="sidebar-content">
                             <Outlet />
                         </div>

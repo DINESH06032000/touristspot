@@ -10,11 +10,19 @@ function Home() {
   return (
     <>
       <div className='globe_home pt-2'>
-        <Button />
+        <div className="globe_title">INDIA</div>
+        <p>3D Projection</p>
+        {/* <Button /> */}
         <Globe2 />
-        
-          <IndiaMap />
-         <State/>
+
+        <div className="globe_angle">
+          <div className="a"></div>
+          <div className="b"></div>
+          <div className="c"></div>
+        </div>
+        <IndiaMap />
+        <State />
+        <img src="images\delhi.png" alt="delhi" />
       </div>
 
     </>
