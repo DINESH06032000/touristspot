@@ -1,4 +1,3 @@
-import Button from "../components/Button"
 import Globe2 from "../components/Globe2"
 import IndiaMap from "../components/IndiaMap"
 import State from "../components/State"
